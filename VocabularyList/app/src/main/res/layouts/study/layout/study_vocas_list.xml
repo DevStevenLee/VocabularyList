@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/wall_animal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBackInStudyVocasList"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/button_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/tvStudyVocasList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            tools:text="동물"/>
+
+        <ImageView
+            android:id="@+id/ivStudyVocasList"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            tools:src="@drawable/sun"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvDefaultVocaList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="단어를 추가해주세요."
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:id="@+id/svVocaList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPictureListOfTopics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </ScrollView>
+</LinearLayout>

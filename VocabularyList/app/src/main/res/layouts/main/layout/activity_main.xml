@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".main.MainActivity"
+    android:background="@drawable/wall_main">
+
+    <ImageView
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_marginTop="@dimen/logo_marginTop"
+        android:src="@drawable/logo"
+        android:textSize="@dimen/logo_textsize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/logo_marginTop">
+
+        <LinearLayout
+            android:layout_width="@dimen/Vocas_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/ivMoveToStudyVocas"
+                android:layout_width="@dimen/Vocas_Icon_width"
+                android:layout_height="@dimen/Vocas_Icon_height"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/button_study_voca" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/Vocas_Icon_textsize"
+                android:text="단어 학습"
+                android:textStyle="bold"
+                android:fontFamily="@font/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/Vocas_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/ivMoveToReviewVocas"
+                android:layout_width="@dimen/Vocas_Icon_width"
+                android:layout_height="@dimen/Vocas_Icon_height"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/button_review_vocas" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/Vocas_Icon_textsize"
+                android:text="단어 복습"
+                android:textStyle="bold"
+                android:fontFamily="@font/cute"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/Vocas_margin">
+
+        <LinearLayout
+            android:layout_width="@dimen/Vocas_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/ivMoveToBookmark"
+                android:layout_width="@dimen/Vocas_Icon_width"
+                android:layout_height="@dimen/Vocas_Icon_height"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/button_bookmark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/Vocas_Icon_textsize"
+                android:text="즐겨찾기"
+                android:textStyle="bold"
+                android:fontFamily="@font/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/Vocas_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/ivMoveToAddNewVocabulary"
+                android:layout_width="@dimen/Vocas_Icon_width"
+                android:layout_height="@dimen/Vocas_Icon_height"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/button_add_new_voca" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/Vocas_Icon_textsize"
+                android:text="새로운 단어 추가"
+                android:textStyle="bold"
+                android:fontFamily="@font/cute"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/rounded_rectangle_for_voca_card"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDeleteVoca"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:text="삭제"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="@drawable/white_cloud"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivStudyCloseVoca"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/card_margin"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/button_close" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:background="@drawable/rounded_rectangle_white_for_voca_card">
+
+        <ImageView
+            android:id="@+id/ivAddDeleteStarButton"
+            android:layout_width="@dimen/star_width"
+            android:layout_height="@dimen/star_height"
+            android:src="@drawable/ic_baseline_star_border_24"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp" />
+
+        <ImageView
+            android:id="@+id/ivStudyVoca"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/animal_duck" />
+
+        <ImageView
+            android:id="@+id/ivLeftButtonInVocaCard"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/button_left" />
+
+        <ImageView
+            android:id="@+id/ivRightButtonInVocaCard"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/button_right" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvStudyVoca"
+        android:layout_width="@dimen/card_icon_width"
+        android:layout_height="@dimen/card_icon_height"
+        android:layout_marginTop="@dimen/card_marginTop"
+        android:text="하트"
+        android:textSize="@dimen/card_textsize"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_rectangle_white_for_voca_card"
+        />
+
+    <ImageView
+        android:id="@+id/ivWordSpeech"
+        android:layout_width="@dimen/card_icon_width"
+        android:layout_height="@dimen/card_icon_height"
+        android:layout_marginTop="@dimen/card_margin"
+        android:src="@drawable/button_speaker"
+        android:padding="5dp"
+        android:background="@drawable/rounded_rectangle_white_for_voca_card"
+        />
+
+</LinearLayout>

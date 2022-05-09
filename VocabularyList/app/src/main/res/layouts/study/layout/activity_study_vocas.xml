@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".study_vocas.StudyVocas"
+    android:background="@drawable/wall_learnwords">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBackInStudyVocas"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/button_back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="단어 학습"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/flying_balloon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="@dimen/study_voca_layoutwidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/ivMoveToAnimalVocas"
+                android:layout_width="@dimen/study_voca_width"
+                android:layout_height="@dimen/study_voca_height"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/button_animal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/study_voca_textsize"
+                android:text="동물"
+                android:textStyle="bold"
+                android:fontFamily="@font/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/study_voca_layoutwidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/ivMoveToFlagVocas"
+                android:layout_width="@dimen/study_voca_width"
+                android:layout_height="@dimen/study_voca_height"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/button_country" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/study_voca_textsize"
+                android:text="나라"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/study_voca_marginTop">
+
+        <LinearLayout
+            android:layout_width="@dimen/study_voca_layoutwidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/ivMoveToBodyVocas"
+                android:layout_width="@dimen/study_voca_width"
+                android:layout_height="@dimen/study_voca_height"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/button_body" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/study_voca_textsize"
+                android:text="신체"
+                android:textStyle="bold"
+                android:fontFamily="@font/cute"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/study_voca_layoutwidth"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/ivMoveToCostomVocas"
+                android:layout_width="@dimen/study_voca_width"
+                android:layout_height="@dimen/study_voca_height"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/button_my_vocas" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/study_voca_textsize"
+                android:text="나만의 단어"
+                android:textStyle="bold"
+                android:fontFamily="@font/cute"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

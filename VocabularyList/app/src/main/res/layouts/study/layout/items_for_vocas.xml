@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/picture_xmlns_width"
+    android:layout_height="@dimen/picture_xmlns_height">
+
+    <ImageView
+        android:id="@+id/ivVocasPicture"
+        android:layout_width="@dimen/picture_width"
+        android:layout_height="@dimen/picture_height"
+        android:scaleType="centerCrop"
+        android:layout_margin="@dimen/picture_margin"/>
+</RelativeLayout>
